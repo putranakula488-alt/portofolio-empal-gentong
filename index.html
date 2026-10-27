@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empal Gentong Khas Cirebon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Empal Gentong</h1>
+
+        <nav>
+            <a href="#Home"></a>
+            <a href="#Tentang"></a>
+            <a href="#Produk"></a>
+            <a href="#Kontak"></a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Empal Gentong Khas Cirebon</h2>
+        <p>Rasa khas Cirebon yang gurih, hangat, dan nikmat</p>
+
+        <button>Lihat Produk</button>
+    </section>
+
+    <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>
+        Empal Gentong Cirebon adalah usaha kuliner yang menyajikan
+        makanan khas Cirebon dengan cita rasa gurih dan nikmat.
+        Kami menggunakan bahan pilihan dan menjaga kualitas
+        setiap hidangan untuk pelanggan.
+    </p>
+    </section>
+
+    <section id="produk">
+        <h2>Produk Kami</h2>
+
+        <div>
+            <img src="images/empal-gentong.jpg" alt="Empal Gentong">
+            <h3>Empal Gentong</h3>
+            <p class="deskripsi">
+                Kuah gurih khas Cirebon dengan daging yang lembut dan nikmat.
+            </p>
+            <p>Rp25.000</p>
+            <button onclick="bukaForm('Empal Gentong')">Pesan Sekarang</button>
+        </div>
+
+        <div>
+            <img src="images/nasi-lengko.jpg" alt="Nasi Lengko">
+            <h3>Nasi Lengko</h3>
+            <p class="deskripsi">
+                Nasi dengan tahu, tempe, tauge, dan bumbu khas yang lezat. 
+            </p>
+            <p>Rp15.000</p>
+            <button onclick="bukaForm('Nasi Lengko')">Pesan Sekarang</button>
+        </div>
+    </section>
+
+    <section id="kontak">
+         <h2>Hubungi Kami</h2>
+
+    <p>
+        WhatsApp:
+        <a href="https://wa.me/6281234567890" target="_blank">
+            0812-3456-7890
+        </a>
+    </p>
+
+    <p>
+        Instagram:
+        <a href="https://instagram.com/empalgentongcirebon" target="_blank">
+            @empalgentongcirebon
+        </a>
+    </section>
+
+    <div id="formPesanan" class="form-container">
+    <div class="form-box">
+        <span class="tutup" onclick="tutupForm()">&times;</span>
+
+        <h2>Pesan Makanan</h2>
+
+        <p id="namaProduk"></p>
+
+        <input type="text" id="nama" placeholder="Nama Anda">
+
+        <input type="number" id="jumlah" placeholder="Jumlah Pesanan" min="1">
+
+        <button onclick="kirimPesanan()">Kirim Pesanan</button>
+    </div>
+</div>
+
+    <footer>
+        <p>2026 Empal Gentong Cirebon</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
